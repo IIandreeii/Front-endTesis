@@ -1,0 +1,2 @@
+GET /profile?secret_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjY3MmNjZDYzNGJjZmJjZDk2MGU0NDBlZiIsImVtYWlsIjoidmhhbmRyZWU0NXg0NUBnbWFpbC5jb20ifSwiaWF0IjoxNzMxMzc3NzUxfQ.bp166KFK9trTS7jpBUJ2eHUAd5VsY2fmKVLL8re55xo 304 4.855 ms - -
+Missing required fields

@@ -1,0 +1,26 @@
+{
+    "sourceFile": "src/components/component/profile.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1731397126879,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1731397161297,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,8 +26,9 @@\n           throw new Error(`Error fetching user: ${res.status} ${res.statusText}`)\n         }\n         const data = await res.json()\n         setUser(data.user)\n+        console\n       } catch (error) {\n         console.error('Error:', error)\n       }\n     }\n"
+                },
+                {
+                    "date": 1731397181453,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n           throw new Error(`Error fetching user: ${res.status} ${res.statusText}`)\n         }\n         const data = await res.json()\n         setUser(data.user)\n-        console.log('Usuario logueado:', data.user)\n+        console.log('Usuario logueado:', data)\n       } catch (error) {\n         console.error('Error:', error)\n       }\n     }\n"
+                }
+            ],
+            "date": 1731397126879,
+            "name": "Commit-0",
+            "content": ""
+        }
+    ]
+}
