@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 3,
+            "activePatchIndex": 7,
             "patches": [
                 {
                     "date": 1731024797989,
@@ -20,6 +20,22 @@
                 {
                     "date": 1731024818958,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,7 @@\n+import Pst from \"@/components/component/PostComponent\";;\r\n+\r\n+export default function Home() {\r\n+  return (\r\n+    <P />\r\n+  );\r\n+}\r\n"
+                },
+                {
+                    "date": 1731815095777,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,28 +1,7 @@\n-import Pst from \"@/components/component/PostComponent\";;\r\n+import Pst from \"@/components/component/event-form\";;\r\n \r\n export default function Home() {\r\n   return (\r\n-    <P />\r\n+    <Pst />\r\n   );\r\n }\r\n-import Pst from \"@/components/component/PostComponent\";;\r\n-\r\n-export default function Home() {\r\n-  return (\r\n-    <Profile />\r\n-  );\r\n-}\r\n-import Profile from \"@/components/component/PostComponent\";;\r\n-\r\n-export default function Home() {\r\n-  return (\r\n-    <Profile />\r\n-  );\r\n-}\r\n-import Profile from \"@/components/component/profile\";;\r\n-\r\n-export default function Home() {\r\n-  return (\r\n-    <Profile />\r\n-  );\r\n-}\r\n"
+                },
+                {
+                    "date": 1731815132274,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-import Pst from \"@/components/component/event-form\";;\r\n+import EventFormComponent from \"@/components/component/event-form\";;\r\n \r\n export default function Home() {\r\n   return (\r\n     <Pst />\r\n"
+                },
+                {
+                    "date": 1731815138521,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,7 @@\n+import { EventFormComponent } from \"@/components/component/event-form\";;\r\n+\r\n+export default function Home() {\r\n+  return (\r\n+    <Pst />\r\n+  );\r\n+}\r\n"
+                },
+                {
+                    "date": 1731815145203,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,7 @@\n+import { EventFormComponent } from \"@/components/component/event-form\";;\r\n+\r\n+export default function Home() {\r\n+  return (\r\n+    <EventFormComponent />\r\n+  );\r\n+}\r\n"
                 }
             ],
             "date": 1731024797989,

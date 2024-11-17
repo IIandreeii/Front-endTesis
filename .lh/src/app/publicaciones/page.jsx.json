@@ -1,0 +1,46 @@
+{
+    "sourceFile": "src/app/publicaciones/page.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 7,
+            "patches": [
+                {
+                    "date": 1731819664630,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1731819672981,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n \r\n \r\n-import Profile from \"@/components/component/profile\";;\r\n+import Profile from \"@/components/component/event-\";;\r\n \r\n export default function Home() {\r\n   return (\r\n     <Profile />\r\n"
+                },
+                {
+                    "date": 1731819678881,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n \r\n \r\n-import Profile from \"@/components/component/event-\";;\r\n+import Profile from \"@/components/component/event-view\";;\r\n \r\n export default function Home() {\r\n   return (\r\n     <Profile />\r\n"
+                },
+                {
+                    "date": 1731819691546,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n \r\n \r\n-import Profile from \"@/components/component/event-view\";;\r\n+import Publicaciones from \"@/components/component/event-view.jsx\";;\r\n \r\n export default function Home() {\r\n   return (\r\n     <Profile />\r\n"
+                },
+                {
+                    "date": 1731822519301,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n \r\n \r\n-import Publicaciones from \"@/components/component/event-view.jsx\";;\r\n+import EventViewComponent from \"@/components/component/event-view.jsx\";;\r\n \r\n export default function Home() {\r\n   return (\r\n-    <Profile />\r\n+    <Publicaciones />\r\n   );\r\n }\r\n"
+                },
+                {
+                    "date": 1731822603248,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,7 @@\n \r\n-\r\n import EventViewComponent from \"@/components/component/event-view.jsx\";;\r\n-\r\n export default function Home() {\r\n   return (\r\n-    <Publicaciones />\r\n+    <EventViewComponent />\r\n   );\r\n }\r\n"
+                },
+                {
+                    "date": 1731822614197,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,9 @@\n+import EventViewComponent from '@/components/component/event-view';\r\n \r\n-import EventViewComponent from \"@/components/component/event-view.jsx\";;\r\n-export default function Home() {\r\n-  return (\r\n-    <EventViewComponent />\r\n-  );\r\n+export default function Page() {\r\n+    return (\r\n+        <div>\r\n+            <EventViewComponent />\r\n+        </div>\r\n+    );\r\n }\r\n"
+                },
+                {
+                    "date": 1731822699250,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,7 @@\n-import EventViewComponent from '@/components/component/event-view';\r\n \r\n-export default function Page() {\r\n-    return (\r\n-        <div>\r\n-            <EventViewComponent />\r\n-        </div>\r\n-    );\r\n+import EventViewComponent from \"@/components/component/event-view.jsx\";;\r\n+export default function Home() {\r\n+  return (\r\n+    <EventViewComponent />\r\n+  );\r\n }\r\n"
+                }
+            ],
+            "date": 1731819664630,
+            "name": "Commit-0",
+            "content": "\r\n\r\nimport Profile from \"@/components/component/profile\";;\r\n\r\nexport default function Home() {\r\n  return (\r\n    <Profile />\r\n  );\r\n}\r\n"
+        }
+    ]
+}

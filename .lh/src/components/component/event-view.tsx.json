@@ -1,0 +1,18 @@
+{
+    "sourceFile": "src/components/component/event-view.tsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1731814622607,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1731814622607,
+            "name": "Commit-0",
+            "content": "// FILE: src/components/Publications.js\n'use client';\n\nimport React, { useEffect, useState } from 'react';\nimport axios from 'axios';\nimport io from 'socket.io-client';\n\nconst socket = io('http://localhost:3001');\n\nconst Publications = () => {\n    const [publications, setPublications] = useState([]);\n\n    useEffect(() => {\n        const fetchPublications = async () => {\n            try {\n                const response = await axios.get('/api/publications');\n                setPublications(response.data);\n            } catch (error) {\n                console.error('Error fetching publications:', error);\n            }\n        };\n\n        fetchPublications();\n\n        socket.on('newPublication', (publication) => {\n            setPublications((prevPublications) => [publication, ...prevPublications]);\n        });\n\n        socket.on('updatePublication', (updatedPublication) => {\n            setPublications((prevPublications) =>\n                prevPublications.map((publication) =>\n                    publication._id === updatedPublication._id ? updatedPublication : publication\n                )\n            );\n        });\n\n        socket.on('newComment', (newComment) => {\n            setPublications((prevPublications) =>\n                prevPublications.map((publication) =>\n                    publication._id === newComment.publicationId\n                        ? { ...publication, comments: [...publication.comments, newComment] }\n                        : publication\n                )\n            );\n        });\n\n        return () => {\n            socket.off('newPublication');\n            socket.off('updatePublication');\n            socket.off('newComment');\n        };\n    }, []);\n\n    return (\n        <div>\n            {publications.map(publication => (\n                <div key={publication._id}>\n                    <h2>{publication.title}</h2>\n                    <p>{publication.description}</p>\n                    {publication.imageUrl && <img src={publication.imageUrl} alt={publication.title} />}\n                    <p>{publication.location}</p>\n                    <p>{new Date(publication.date).toLocaleString()}</p>\n                    <p>Likes: {publication.likes}</p>\n                    <div>\n                        {publication.comments.map((comment, index) => (\n                            <p key={index}><strong>{comment.user}:</strong> {comment.comment}</p>\n                        ))}\n                    </div>\n                </div>\n            ))}\n        </div>\n    );\n};\n\nexport default Publications;"
+        }
+    ]
+}
