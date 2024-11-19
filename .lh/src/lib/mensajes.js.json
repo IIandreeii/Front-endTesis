@@ -1,0 +1,22 @@
+{
+    "sourceFile": "src/lib/mensajes.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1732004069104,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1732004379265,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,11 @@\n+import { useRouter } from 'next/router';\r\n+import ChatPage from '../components/ChatPage';\r\n+\r\n+const Mensajes = () => {\r\n+  const router = useRouter();\r\n+  const { chatId } = router.query;\r\n+\r\n+  return <ChatPage chatId={chatId} />;\r\n+};\r\n+\r\n+export default Mensajes;\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1732004069104,
+            "name": "Commit-0",
+            "content": "import { useRouter } from 'next/router';\r\nimport ChatPage from '../components/ChatPage';\r\n\r\nconst Mensajes = () => {\r\n  const router = useRouter();\r\n  const { chatId } = router.query;\r\n\r\n  return <ChatPage chatId={chatId} />;\r\n};\r\n\r\nexport default Mensajes;"
+        }
+    ]
+}

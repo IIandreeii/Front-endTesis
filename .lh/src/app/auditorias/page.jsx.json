@@ -1,0 +1,30 @@
+{
+    "sourceFile": "src/app/auditorias/page.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 3,
+            "patches": [
+                {
+                    "date": 1732001483892,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1732001537429,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,8 @@\n+import Agradecimiento from \"@/components/component/enhanced-audit-dashboard\";\r\n+\r\n+\r\n+export default function Home() {\r\n+  return (\r\n+    <Agradecimiento />\r\n+  );\r\n+}\r\n"
+                },
+                {
+                    "date": 1732001551453,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,16 +1,8 @@\n-import Agradecimiento from \"@/components/component/enhanced-audit-dashboard\";\r\n+import Auditorias from \"@/components/component/enhanced-audit-dashboard\";\r\n \r\n \r\n export default function Home() {\r\n   return (\r\n     <Agradecimiento />\r\n   );\r\n }\r\n-import Agradecimiento from \"@/components/component/agradecimiento.jsx\";\r\n-\r\n-\r\n-export default function Home() {\r\n-  return (\r\n-    <Agradecimiento />\r\n-  );\r\n-}\r\n"
+                },
+                {
+                    "date": 1732001658466,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,9 @@\n+import { EnhancedAuditDashboardComponent } from '@/components/component/enhanced-audit-dashboard';\r\n+\r\n+export default function Auditorias() {\r\n+  return (\r\n+    <div>\r\n+      <EnhancedAuditDashboardComponent />\r\n+    </div>\r\n+  );\r\n+}\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1732001483892,
+            "name": "Commit-0",
+            "content": "import Agradecimiento from \"@/components/component/agradecimiento.jsx\";\r\n\r\n\r\nexport default function Home() {\r\n  return (\r\n    <Agradecimiento />\r\n  );\r\n}\r\n"
+        }
+    ]
+}

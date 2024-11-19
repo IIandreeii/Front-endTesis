@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 6,
+            "activePatchIndex": 8,
             "patches": [
                 {
                     "date": 1731369572272,
@@ -32,6 +32,14 @@
                 {
                     "date": 1731385998322,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,9 @@\n+\r\n+import Mensajes from \"@/components/component/fb-messenger-complete\";\r\n+\r\n+\r\n+export default function Home() {\r\n+  return (\r\n+    <Mensajes />\r\n+  );\r\n+}\r\n"
+                },
+                {
+                    "date": 1732004626736,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,18 +1,23 @@\n \r\n-import Mensajes from \"@/components/component/fb-messenger-complete\";\r\n+import Mensajes from \"@/components/component/fb-messenger-complete.jsx\";\r\n \r\n \r\n export default function Home() {\r\n   return (\r\n     <Mensajes />\r\n   );\r\n }\r\n \r\n-import Mensajes from \"@/components/component/fb-messenger-improved.jsx\";\r\n \r\n \r\n-export default function Home() {\r\n-  return (\r\n-    <Mensajes />\r\n-  );\r\n-}\r\n+import { useRouter } from 'next/router';\r\n+import ChatPage from '../components/ChatPage';\r\n+\r\n+const Mensajes = () => {\r\n+  const router = useRouter();\r\n+  const { chatId } = router.query;\r\n+\r\n+  return <ChatPage chatId={chatId} />;\r\n+};\r\n+\r\n+export default Mensajes;\r\n"
+                },
+                {
+                    "date": 1732004658299,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,17 +7,4 @@\n     <Mensajes />\r\n   );\r\n }\r\n \r\n-\r\n-\r\n-import { useRouter } from 'next/router';\r\n-import ChatPage from '../components/ChatPage';\r\n-\r\n-const Mensajes = () => {\r\n-  const router = useRouter();\r\n-  const { chatId } = router.query;\r\n-\r\n-  return <ChatPage chatId={chatId} />;\r\n-};\r\n-\r\n-export default Mensajes;\r\n"
                 }
             ],
             "date": 1731369572272,
