@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/components/component/logind.jsx", "src/app/logind/page.jsx", "src/components/component/profile.jsx", "src/components/ui/avatar.tsx", "src/app/profile/page.jsx", "src/components/component/navbar.jsx", "src/components/component/register.jsx", "src/components/component/home-page-without-navbar.jsx", "src/components/component/agradecimiento.jsx", "src/components/component/donaciones.jsx", "src/components/component/messenger-chat.jsx", "src/components/component/fb-messenger-improved.jsx", "src/components/component/fb-messenger-complete.jsx", "src/components/component/event-view.jsx", "src/components/component/event-form.jsx", "src/components/component/formulario-donacion.jsx"],
+  "exclude": ["node_modules"]
+}

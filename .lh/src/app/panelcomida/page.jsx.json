@@ -1,0 +1,74 @@
+{
+    "sourceFile": "src/app/panelcomida/page.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 14,
+            "patches": [
+                {
+                    "date": 1731952528645,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1731952625756,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n \r\n-import Organizaciones from \"@/components/component/organizaciones\";\r\n+import Organizaciones from \"@/components/component/panel-donaciones\";\r\n \r\n \r\n export default function Home() {\r\n   return (\r\n"
+                },
+                {
+                    "date": 1731952668757,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n \r\n-import Organizaciones from \"@/components/component/panel-donaciones\";\r\n+import donacionesc from \"@/components/component/panel-donaciones\";\r\n \r\n \r\n export default function Home() {\r\n   return (\r\n"
+                },
+                {
+                    "date": 1731952676605,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,9 @@\n+\r\n+import Donacionesc from \"@/components/component/panel-donaciones\";\r\n+\r\n+\r\n+export default function Home() {\r\n+  return (\r\n+    <Donacionesc />\r\n+  );\r\n+}\r\n"
+                },
+                {
+                    "date": 1731952775983,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,4 +6,13 @@\n   return (\r\n     <Donacionesc />\r\n   );\r\n }\r\n+\r\n+\r\n+import { FormularioDonacionComponent } from \"@/components/component/formulario-donacion\";\r\n+\r\n+export default function Home() {\r\n+  return (\r\n+    <FormularioDonacionComponent />\r\n+  );\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1731952789441,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,20 +8,11 @@\n   );\r\n }\r\n \r\n \r\n-import { FormularioDonacionComponent } from \"@/components/component/formulario-donacion\";\r\n+import { panel-donaciones } from \"@/components/component/formulario-donacion\";\r\n \r\n export default function Home() {\r\n   return (\r\n     <FormularioDonacionComponent />\r\n   );\r\n-}\n-\r\n-import donacionesc from \"@/components/component/panel-donaciones\";\r\n-\r\n-\r\n-export default function Home() {\r\n-  return (\r\n-    <Organizaciones />\r\n-  );\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1731952797259,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n   );\r\n }\r\n \r\n \r\n-import { panel-donaciones } from \"@/components/component/formulario-donacion\";\r\n+import { FormularioDonacionComponent } from \"@/components/component/formulario-donacion\";\r\n \r\n export default function Home() {\r\n   return (\r\n     <FormularioDonacionComponent />\r\n"
+                },
+                {
+                    "date": 1731952806112,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n \r\n-import Donacionesc from \"@/components/component/panel-donaciones\";\r\n+import {Donacionesc from \"@/components/component/panel-donaciones\";\r\n \r\n \r\n export default function Home() {\r\n   return (\r\n"
+                },
+                {
+                    "date": 1731952811880,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n \r\n-import {Donacionesc from \"@/components/component/panel-donaciones\";\r\n+import {Donacionescfrom} \"@/components/component/panel-donaciones\";\r\n \r\n \r\n export default function Home() {\r\n   return (\r\n"
+                },
+                {
+                    "date": 1731952817209,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,18 @@\n+\r\n+import {Donacionesc} \"@/components/component/panel-donaciones\";\r\n+\r\n+\r\n+export default function Home() {\r\n+  return (\r\n+    <Donacionesc />\r\n+  );\r\n+}\r\n+\r\n+\r\n+import { FormularioDonacionComponent } from \"@/components/component/formulario-donacion\";\r\n+\r\n+export default function Home() {\r\n+  return (\r\n+    <FormularioDonacionComponent />\r\n+  );\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1731952825489,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n \r\n-import {Donacionesc} \"@/components/component/panel-donaciones\";\r\n+import {Donacionesc} from \"@/components/component/panel-donaciones\";\r\n \r\n \r\n export default function Home() {\r\n   return (\r\n@@ -8,29 +8,4 @@\n   );\r\n }\r\n \r\n \r\n-import { FormularioDonacionComponent } from \"@/components/component/formulario-donacion\";\r\n-\r\n-export default function Home() {\r\n-  return (\r\n-    <FormularioDonacionComponent />\r\n-  );\r\n-}\n-\r\n-import {Donacionescfrom} \"@/components/component/panel-donaciones\";\r\n-\r\n-\r\n-export default function Home() {\r\n-  return (\r\n-    <Donacionesc />\r\n-  );\r\n-}\r\n-\r\n-\r\n-import { FormularioDonacionComponent } from \"@/components/component/formulario-donacion\";\r\n-\r\n-export default function Home() {\r\n-  return (\r\n-    <FormularioDonacionComponent />\r\n-  );\r\n-}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1731952840033,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,18 @@\n+\r\n+import {Donacionesc} \"@/components/component/panel-donaciones\";\r\n+\r\n+\r\n+export default function Home() {\r\n+  return (\r\n+    <Donacionesc />\r\n+  );\r\n+}\r\n+\r\n+\r\n+import { FormularioDonacionComponent } from \"@/components/component/formulario-donacion\";\r\n+\r\n+export default function Home() {\r\n+  return (\r\n+    <FormularioDonacionComponent />\r\n+  );\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1731952848150,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,18 @@\n+\r\n+import {Donacionesc} from \"@/components/component/panel-donaciones\";\r\n+\r\n+\r\n+export default function Home() {\r\n+  return (\r\n+    <Donacionesc />\r\n+  );\r\n+}\r\n+\r\n+\r\n+import { FormularioDonacionComponent } from \"@/components/component/formulario-donacion\";\r\n+\r\n+export default function Home() {\r\n+  return (\r\n+    <FormularioDonacionComponent />\r\n+  );\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1731952872640,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,11 @@\n+\r\n+import Donacionesc from \"@/components/component/panel-donaciones\";\r\n+\r\n+\r\n+export default function Home() {\r\n+  return (\r\n+    <Donacionesc />\r\n+  );\r\n+}\r\n+\r\n+\r\n"
+                },
+                {
+                    "date": 1731952918853,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,7 @@\n+import { PanelDonacionesComponent } from \"@/components/component/panel-donaciones\";\r\n+\r\n+export default function Home() {\r\n+  return (\r\n+    <PanelDonacionesComponent />\r\n+  );\r\n+}\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1731952528645,
+            "name": "Commit-0",
+            "content": "\r\nimport Organizaciones from \"@/components/component/organizaciones\";\r\n\r\n\r\nexport default function Home() {\r\n  return (\r\n    <Organizaciones />\r\n  );\r\n}\r\n"
+        }
+    ]
+}

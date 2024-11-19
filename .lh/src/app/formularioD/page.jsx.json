@@ -1,0 +1,26 @@
+{
+    "sourceFile": "src/app/formularioD/page.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1731950930860,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1731950942040,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,15 @@\n+import FormularioD from \"@/components/component/formulario-donacion\";\r\n+\r\n+\r\n+export default function Home() {\r\n+  return (\r\n+    <FormularioD />\r\n+  );\r\n+}\r\n+import { FormularioDonacionComponent } from \"@/components/component/formulario-donacion\";\r\n+\r\n+export default function Home() {\r\n+  return (\r\n+    <FormularioDonacionComponent />\r\n+  );\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1731950959292,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,7 @@\n+import { FormularioDonacionComponent } from \"@/components/component/formulario-donacion\";\r\n+\r\n+export default function Home() {\r\n+  return (\r\n+    <FormularioDonacionComponent />\r\n+  );\r\n+}\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1731950930860,
+            "name": "Commit-0",
+            "content": "import FormularioD from \"@/components/component/formulario-donacion\";\r\n\r\n\r\nexport default function Home() {\r\n  return (\r\n    <FormularioD />\r\n  );\r\n}\r\nimport { FormularioDonacionComponent } from \"@/components/component/formulario-donacion\";\r\n\r\nexport default function Home() {\r\n  return (\r\n    <FormularioDonacionComponent />\r\n  );\r\n}"
+        }
+    ]
+}
